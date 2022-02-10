@@ -24,6 +24,7 @@
     "tsconfig.ui.json"
   ],
   "scripts": {
+    "push": "git push --follow-tags origin main",
     "release": "standard-version && git push --follow-tags origin main",
     "yui": "yarn upgrade-interactive"
   },
