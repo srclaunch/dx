@@ -8,5 +8,5 @@ module.exports = {
   coverageDirectory: 'coverage',
   preset: 'ts-jest',
   testEnvironment: 'node',
-  testPathIgnorePatterns: ['node_modules', 'dist', 'cypress'],
+  testPathIgnorePatterns: ['/node_modules/', '/dist/', '/cypress/'],
 };
