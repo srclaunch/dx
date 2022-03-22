@@ -11,18 +11,75 @@
     "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
+  "type": "module",
   "files": [
     ".commitlintrc.js",
+    ".commitlintrc.cjs",
     ".eslintrc.js",
+    ".eslintrc.cjs",
     ".eslintrc.ui.js",
+    ".eslintrc.ui.cjs",
     ".prettierrc.js",
+    ".prettierrc.cjs",
     ".stylelintrc.js",
+    ".stylelintrc.cjs",
     ".stylelintrc.ui.js",
+    ".stylelintrc.ui.cjs",
     ".versionrc.js",
+    ".versionrc.cjs",
+    "ava.config.js",
+    "ava.config.cjs",
     "jest.config.js",
+    "jest.config.cjs",
     "tsconfig.json",
     "tsconfig.ui.json"
   ],
+  "exports": {
+    "commitlint": {
+      "import": "./.commitlintrc.js",
+      "require": "./.commitlintrc.cjs"
+    },
+    "eslint": {
+      "import": "./.eslintrc.js",
+      "require": "./.eslintrc.cjs"
+    },
+    "eslint_ui": {
+      "import": "./.eslintrc.ui.js",
+      "require": "./.eslintrc.ui.cjs"
+    },
+    "prettier": {
+      "import": "./.prettierrc.js",
+      "require": "./.prettierrc.cjs"
+    },
+    "stylelint": {
+      "import": "./.stylelintrc.js",
+      "require": "./.stylelintrc.cjs"
+    },
+    "stylelint_ui": {
+      "import": "./.stylelintrc.ui.js",
+      "require": "./.stylelintrc.ui.cjs"
+    },
+    "version": {
+      "import": "./.versionrc.js",
+      "require": "./.versionrc.cjs"
+    },
+    "ava": {
+      "import": "./ava.config.js",
+      "require": "./ava.config.cjs"
+    },
+    "jest": {
+      "import": "./jest.config.js",
+      "require": "./jest.config.cjs"
+    },
+    "tsconfig": {
+      "import": "./tsconfig.js",
+      "require": "./tsconfig.cjs"
+    },
+    "tsconfig_ui": {
+      "import": "./tsconfig.ui.js",
+      "require": "./tsconfig.ui.cjs"
+    }
+  },
   "scripts": {
     "push": "git push --follow-tags origin main",
     "release": "standard-version && git push --follow-tags origin main",
