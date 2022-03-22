@@ -25,9 +25,6 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
-      - name: Build package
-        run: yarn build
-
       - name: Allow private package registry access
         id: allow-private-package-registry-access
         run: |
