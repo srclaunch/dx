@@ -63,19 +63,19 @@
       "import": "./.versionrc.js",
       "require": "./.versionrc.cjs"
     },
-    "./ava": {
+    "./ava.config": {
       "import": "./ava.config.js",
       "require": "./ava.config.cjs"
     },
-    "./jest": {
+    "./jest.config": {
       "import": "./jest.config.js",
       "require": "./jest.config.cjs"
     },
-    "./tsconfig": {
+    "./tsconfig.json": {
       "import": "./tsconfig.json",
       "require": "./tsconfig.json"
     },
-    "./tsconfig.ui": {
+    "./tsconfig.ui.json": {
       "import": "./tsconfig.ui.json",
       "require": "./tsconfig.ui.json"
     }
