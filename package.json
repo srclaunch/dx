@@ -29,6 +29,7 @@
     "yui": "yarn upgrade-interactive"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.16.0",
     "standard-version": "^9.3.2"
   }
 }
