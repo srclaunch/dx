@@ -1,8 +1,8 @@
 module.exports = {
-  extensions: {
-    ts: 'module',
-  },
+  extensions: ['.js', '.ts'],
+  require: [
+    'ts-node/register',
+  ],
   failFast: true,
-  nodeArguments: ['--loader=ts-node/esm'],
   verbose: true,
 };
