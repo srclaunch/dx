@@ -35,49 +35,49 @@
     "tsconfig.ui.json"
   ],
   "exports": {
-    "commitlint": {
+    "./.commitlintrc": {
       "import": "./.commitlintrc.js",
       "require": "./.commitlintrc.cjs"
     },
-    "eslint": {
+    "./.eslintrc": {
       "import": "./.eslintrc.js",
       "require": "./.eslintrc.cjs"
     },
-    "eslint_ui": {
+    "./.eslintrc.ui": {
       "import": "./.eslintrc.ui.js",
       "require": "./.eslintrc.ui.cjs"
     },
-    "prettier": {
+    "./.prettierrc": {
       "import": "./.prettierrc.js",
       "require": "./.prettierrc.cjs"
     },
-    "stylelint": {
+    "./.stylelintrc": {
       "import": "./.stylelintrc.js",
       "require": "./.stylelintrc.cjs"
     },
-    "stylelint_ui": {
+    "./.stylelintrc.ui": {
       "import": "./.stylelintrc.ui.js",
       "require": "./.stylelintrc.ui.cjs"
     },
-    "version": {
+    "./.versionrc": {
       "import": "./.versionrc.js",
       "require": "./.versionrc.cjs"
     },
-    "ava": {
+    "./ava": {
       "import": "./ava.config.js",
       "require": "./ava.config.cjs"
     },
-    "jest": {
+    "./jest": {
       "import": "./jest.config.js",
       "require": "./jest.config.cjs"
     },
-    "tsconfig": {
-      "import": "./tsconfig.js",
-      "require": "./tsconfig.cjs"
+    "./tsconfig": {
+      "import": "./tsconfig.json",
+      "require": "./tsconfig.json"
     },
-    "tsconfig_ui": {
-      "import": "./tsconfig.ui.js",
-      "require": "./tsconfig.ui.cjs"
+    "./tsconfig.ui": {
+      "import": "./tsconfig.ui.json",
+      "require": "./tsconfig.ui.json"
     }
   },
   "scripts": {
