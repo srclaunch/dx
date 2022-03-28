@@ -3,7 +3,7 @@
   "description": "Linter config and other developer experience related configs",
   "author": "Steven Bennett <steven@srclaunch.com>",
   "license": "MIT",
-  "version": "0.3.0",
+  "version": "0.1.10",
   "engines": {
     "node": ">=16"
   },
@@ -13,7 +13,7 @@
   },
   "scripts": {
     "push": "git push --follow-tags origin main",
-    "release": "yarn version minor && git push --follow-tags origin main",
+    "release": "yarn version patch && git push --follow-tags origin main",
     "yui": "yarn upgrade-interactive"
   },
   "type": "module",
