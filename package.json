@@ -3,7 +3,7 @@
   "description": "Linter config and other developer experience related configs",
   "author": "Steven Bennett <steven@srclaunch.com>",
   "license": "MIT",
-  "version": "0.1.16",
+  "version": "0.2.0",
   "engines": {
     "node": ">=16"
   },
@@ -84,8 +84,5 @@
       "import": "./tsconfig.ui.json",
       "require": "./tsconfig.ui.json"
     }
-  },
-  "devDependencies": {
-    "standard-version": "^9.3.2"
   }
 }
