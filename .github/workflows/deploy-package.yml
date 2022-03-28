@@ -24,15 +24,6 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
-      - name: Package library
-        run: yarn pack
-
-      - name: Upload build artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: "${{ github.event.repository.owner.login }}-${{ github.event.repository.name }}-${{ github.ref_name }}"
-          path: "*.tgz"
-
       - name: Allow private package registry access
         id: allow-private-package-registry-access
         run: |
@@ -43,4 +34,4 @@ jobs:
           echo "    npmAuthToken: ${{ secrets.NPM_ACCESS_TOKEN }}" >> ./.yarnrc.yml
 
       - name: Publish package to NPM
-        run: yarn npm publish $(ls *.tgz)
+        run: yarn npm publish
