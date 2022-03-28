@@ -12,9 +12,9 @@
     "registry": "https://registry.npmjs.org/"
   },
   "scripts": {
-    "patch": "yarn version patch && git add . && git commit -m \"Bump version for patch release\"",
-    "push": "git push --follow-tags origin main",
-    "release": "yarn patch && yarn push",
+    "version:patch": "yarn version patch && git add . && git commit -m \"Bump version for patch release\"",
+    "git:push": "git push --follow-tags origin main",
+    "release": "yarn version:patch && yarn git:push",
     "yui": "yarn upgrade-interactive"
   },
   "type": "module",
