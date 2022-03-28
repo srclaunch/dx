@@ -3,7 +3,7 @@
   "description": "Linter config and other developer experience related configs",
   "author": "Steven Bennett <steven@srclaunch.com>",
   "license": "MIT",
-  "version": "0.1.16",
+  "version": "0.1.17",
   "engines": {
     "node": ">=16"
   },
@@ -12,8 +12,9 @@
     "registry": "https://registry.npmjs.org/"
   },
   "scripts": {
+    "patch": "yarn version patch && git add . && git commit -m \"Bump version for patch release\"",
     "push": "git push --follow-tags origin main",
-    "release": "yarn version patch && git push --follow-tags origin main",
+    "release": "yarn patch && yarn push",
     "yui": "yarn upgrade-interactive"
   },
   "type": "module",
