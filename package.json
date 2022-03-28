@@ -11,6 +11,11 @@
     "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
+  "scripts": {
+    "push": "git push --follow-tags origin main",
+    "release": "standard-version && git push --follow-tags origin main",
+    "yui": "yarn upgrade-interactive"
+  },
   "type": "module",
   "files": [
     ".commitlintrc.js",
@@ -80,11 +85,7 @@
       "require": "./tsconfig.ui.json"
     }
   },
-  "scripts": {
-    "push": "git push --follow-tags origin main",
-    "release": "standard-version && git push --follow-tags origin main",
-    "yui": "yarn upgrade-interactive"
-  },
+
   "devDependencies": {
     "standard-version": "^9.3.2"
   }
