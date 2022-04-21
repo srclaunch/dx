@@ -4,6 +4,7 @@ export default {
     'src/**/*.{js,ts,tsx}',
     '!src/__tests__/**',
     '!src/tests/**',
+    '!dist/**',
   ],
   coverageDirectory: 'coverage',
   coverageProvider: 'v8',
