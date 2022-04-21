@@ -18,7 +18,6 @@
     "release": "yarn version:patch && yarn git:push",
     "yui": "yarn upgrade-interactive"
   },
-  "type": "module",
   "files": [
     ".commitlintrc.mjs",
     ".commitlintrc.umd.js",
