@@ -1,4 +1,4 @@
-import base from './.eslintrc.js';
+import base from './.eslintrc.mjs';
 
 export default {
   ...base,
