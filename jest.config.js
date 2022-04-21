@@ -7,6 +7,6 @@ export default {
   ],
   coverageDirectory: 'coverage',
   preset: 'ts-jest',
-  testEnvironment: 'node',
+  testEnvironment: 'jest-environment-jsdom',
   testPathIgnorePatterns: ['/node_modules/', '/dist/', '/cypress/'],
 };
