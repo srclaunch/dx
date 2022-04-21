@@ -4,8 +4,8 @@ module.exports = {
   },
   failFast: true,
   files: [
-    'src/__tests__/**/*',
-    'src/tests/**/*',
+    'src/__tests__/**',
+    'src/tests/**',
     'src/**/*.test.ts',
     'src/**/*.test.js',
   ],
