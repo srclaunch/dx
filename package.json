@@ -14,6 +14,7 @@
   "scripts": {
     "version:patch": "yarn version patch && git add . && git commit -m \"Bump version for patch release\"",
     "git:push": "git push --follow-tags origin main",
+    "qr": "git add . && git commit -m \"Quick release - patch\" && yarn release",
     "release": "yarn version:patch && yarn git:push",
     "yui": "yarn upgrade-interactive"
   },
