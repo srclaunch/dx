@@ -1,6 +1,7 @@
 export default {
   extensions: {
     ts: 'module',
+    tsx: 'module',
   },
   failFast: true,
   files: [
@@ -22,7 +23,7 @@ export default {
     '!**/__tests__/**/__helper__/**/*',
     '!**/__tests__/**/__helpers__/**/*',
     '!**/__tests__/**/__fixture__/**/*',
-    '1**/__tests__/**/__fixtures__/**/*',
+    '!**/__tests__/**/__fixtures__/**/*',
     '!**/test/**/helper/**/*',
     '!**/test/**/helpers/**/*',
     '!**/test/**/fixture/**/*',
