@@ -17,5 +17,6 @@
     "strict": true,
     "target": "esnext"
   },
+  "exclude": ["src/**/*.test.ts", "src/**/*.spec.ts"],
   "include": ["./index.ts"]
 }
