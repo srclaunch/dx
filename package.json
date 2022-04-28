@@ -87,5 +87,6 @@
   },
   "devDependencies": {
     "@srclaunch/cli": "^0.1.332"
-  }
+  },
+  "packageManager": "yarn@3.2.0"
 }
