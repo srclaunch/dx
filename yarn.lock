@@ -903,7 +903,6 @@ __metadata:
   resolution: "@srclaunch/dx@workspace:."
   dependencies:
     "@srclaunch/cli": ^0.1.333
-    "@srclaunch/types": ^0.1.115
   languageName: unknown
   linkType: soft
 
@@ -934,13 +933,6 @@ __metadata:
   version: 0.1.12
   resolution: "@srclaunch/node-environment@npm:0.1.12"
   checksum: 342484acbbbe6a8508a362f3a03a2d926b6fa9883c5c21f5047b4a9943be368083381a1e9aa25911e885014ca7713ae0e09e893bfd376305a91a813f51bcd95c
-  languageName: node
-  linkType: hard
-
-"@srclaunch/types@npm:^0.1.115":
-  version: 0.1.115
-  resolution: "@srclaunch/types@npm:0.1.115"
-  checksum: e4cfdc517bee15251b9e1f516cc9a3151cad5dbb44f781fa8b3e5f886619cc3332826c5d593f3f3a09aae15080fd7986fbe0dec2fa1748c82252df4a2231e5e7
   languageName: node
   linkType: hard
 
