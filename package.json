@@ -19,62 +19,62 @@
   },
   "files": [
     ".commitlintrc.mjs",
-    ".commitlintrc.umd.js",
+    ".commitlintrc.umd.cjs",
     ".eslintrc.mjs",
-    ".eslintrc.umd.js",
+    ".eslintrc.umd.cjs",
     ".eslintrc.ui.mjs",
-    ".eslintrc.ui.umd.js",
+    ".eslintrc.ui.umd.cjs",
     ".prettierrc.mjs",
-    ".prettierrc.umd.js",
+    ".prettierrc.umd.cjs",
     ".stylelintrc.mjs",
-    ".stylelintrc.umd.js",
+    ".stylelintrc.umd.cjs",
     ".stylelintrc.ui.mjs",
-    ".stylelintrc.ui.umd.js",
+    ".stylelintrc.ui.umd.cjs",
     ".versionrc.mjs",
-    ".versionrc.umd.js",
+    ".versionrc.umd.cjs",
     "ava.config.mjs",
-    "ava.config.umd.js",
+    "ava.config.umd.cjs",
     "jest.config.mjs",
-    "jest.config.umd.js",
+    "jest.config.umd.cjs",
     "tsconfig.json",
     "tsconfig.ui.json"
   ],
   "exports": {
     "./.commitlintrc": {
       "import": "./.commitlintrc.mjs",
-      "require": "./.commitlintrc.umd.js"
+      "require": "./.commitlintrc.umd.cjs"
     },
     "./.eslintrc": {
       "import": "./.eslintrc.mjs",
-      "require": "./.eslintrc.umd.js"
+      "require": "./.eslintrc.umd.cjs"
     },
     "./.eslintrc.ui": {
       "import": "./.eslintrc.ui.mjs",
-      "require": "./.eslintrc.ui.umd.js"
+      "require": "./.eslintrc.ui.umd.cjs"
     },
     "./.prettierrc": {
       "import": "./.prettierrc.mjs",
-      "require": "./.prettierrc.umd.js"
+      "require": "./.prettierrc.umd.cjs"
     },
     "./.stylelintrc": {
       "import": "./.stylelintrc.mjs",
-      "require": "./.stylelintrc.umd.js"
+      "require": "./.stylelintrc.umd.cjs"
     },
     "./.stylelintrc.ui": {
       "import": "./.stylelintrc.ui.mjs",
-      "require": "./.stylelintrc.ui.umd.js"
+      "require": "./.stylelintrc.ui.umd.cjs"
     },
     "./.versionrc": {
       "import": "./.versionrc.mjs",
-      "require": "./.versionrc.umd.js"
+      "require": "./.versionrc.umd.cjs"
     },
     "./ava.config": {
       "import": "./ava.config.mjs",
-      "require": "./ava.config.umd.js"
+      "require": "./ava.config.umd.cjs"
     },
     "./jest.config": {
       "import": "./jest.config.mjs",
-      "require": "./jest.config.umd.js"
+      "require": "./jest.config.umd.cjs"
     },
     "./tsconfig.json": {
       "import": "./tsconfig.json",
