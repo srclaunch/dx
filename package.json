@@ -1,6 +1,6 @@
 {
   "name": "@srclaunch/dx",
-  "description": "Linter config and other developer experience related configs",
+  "description": "Quality of life configuration and tooling for development environments.",
   "author": "Steven Bennett <steven@srclaunch.com>",
   "license": "MIT",
   "version": "0.1.44",
@@ -86,7 +86,8 @@
     }
   },
   "devDependencies": {
-    "@srclaunch/cli": "^0.1.332"
+    "@srclaunch/cli": "^0.1.333",
+    "@srclaunch/types": "^0.1.115"
   },
   "packageManager": "yarn@3.2.0"
 }
