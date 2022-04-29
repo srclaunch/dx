@@ -9,7 +9,7 @@ Includes the following configuration and linters:
 |:-------|:------------|
 | `eslint` | [ESLint](https://eslint.org/) is a JavaScript code quality tool that checks your code for errors, helps you write better code, and rewards you for writing it. |
 | `prettier` | [Prettier](https://prettier.io/) is a tool to format your code according to a preset style. |
-| `stylelint` | [Stylelint](https://stylelint.io/) is a tool to check your CSS, SCSS, and LESS files for style errors. |
+| `stylelint` | [Stylelint](https://stylelint.io/) is a mighty, modern linter that helps you avoid errors and enforce conventions in your styles.|
 | `commitlint` | [Commitlint](https://commitlint.js.org/) is a tool to enforce a consistent commit message format. |
 
 <!-- prettier-ignore -->
@@ -24,34 +24,165 @@ Includes the following configuration and linters:
 
 ### Installation
 
+Install each of the following dependencies you choose to use.
+
+<!-- prettier-ignore -->
+| Linter/Configuration | Command |
+|:---------------------|:--------|
+| `eslint` | `npm i -D eslint` or `yarn add eslint -D` |
+| `prettier` | `npm i -D prettier` or `yarn add prettier -D` |
+| `stylelint` | `npm i -D stylelint` or `yarn add stylelint -D` |
+| `commitlint` | `npm i -D @commitlint/config-conventional @commitlint/cli` or `yarn add @commitlint/config-conventional @commitlint/cli -D` |
+| `typescript` | `npm i -D typescript` or `yarn add typescript -D` |
+| `jest` | `npm i -D jest` or `yarn add jest -D` |
+| `ava` | `npm i -D ava` or `yarn add ava -D` |
+| `standard-version` | `npm i -D standard-version` or `yarn add standard-version -D` |
+
+prettier stylelint commitlint typescript jest ava standard-version
+
 With [npm](https://nodejs.org/en/):
 
     `npm install --save-dev @srclaunch/dx`
 
 Or with [yarn](https://yarnpkg.com/en/docs/install):
 
-    `yarn add @srclaunch/dx -D`
+    yarn add @srclaunch/dx -D
 
-The VSCode extension loads the configuration file using CJS `require`, so we need to use the `.cjs` file extension and `require` syntax to load the configuration if your package is using ESM. Use the filenames below and place in the root directory of your project.
+The `eslint`, `prettier`, and `standard-version` tools loads the configuration files using CommonJS/`require`, so we need to use the `.cjs` file extension and `require` syntax to load the configuration if your package is using ESM. Use the filenames below and place in the root directory of your project.
 
-### `eslint`
+### Examples
 
-**.eslintrc.js**
+#### ESLint
+
+**`.eslintrc.cjs`**
 
 ```js
-import base from "@srclaunch/dx/.eslintrc.ui";
+const base = require("@srclaunch/dx/.eslintrc");
 
-export default {
+module.exports = {
   ...base,
+  // Any custom config here...
 };
 ```
 
-**.eslintrc.cjs**
+Use `@srclaunch/dx/.eslintrc.ui` for configuration optimized for frontend development.
 
 ```js
 const base = require("@srclaunch/dx/.eslintrc.ui");
 
 module.exports = {
   ...base,
+  // Any custom config here...
+};
+```
+
+#### Prettier
+
+**`.prettierrc.cjs`**
+
+```js
+const base = require("@srclaunch/dx/.prettierrc");
+
+module.exports = {
+  ...base,
+  // Any custom config here...
+};
+```
+
+#### Stylelint
+
+**`.stylelintrc.js`**
+
+```js
+import base from "@srclaunch/dx/.stylelintrc";
+
+export default {
+  ...base,
+  // Any custom config here...
+};
+```
+
+Use `@srclaunch/dx/.stylelintrc.ui` for configuration optimized for frontend development.
+
+```js
+import base from "@srclaunch/dx/.stylelintrc.ui";
+
+export default {
+  ...base,
+  // Any custom config here...
+};
+```
+
+#### Commitlint - Conventional commits
+
+**`.commitlintrc.js`**
+
+```js
+import base from "@srclaunch/dx/.commitlintrc";
+
+export default {
+  commitlint: {
+    ...base,
+    // Any custom config here...
+  },
+};
+```
+
+#### Typescript
+
+**`tsconfig.json`**
+
+```json
+{
+  "extends": "@srclaunch/dx/tsconfig.json",
+  "include": ["src"]
+}
+```
+
+For a Typescript configuration optimized for frontend development extend `@srclaunch/dx/tsconfig.ui.json`.
+
+```json
+{
+  "extends": "@srclaunch/dx/tsconfig.ui.json",
+  "include": ["src"]
+}
+```
+
+#### Jest
+
+**`jest.config.js`**
+
+```js
+import base from "@srclaunch/dx/jest.config";
+
+export default {
+  ...base,
+  // Any custom config here...
+};
+```
+
+#### AVA
+
+**`ava.config.js`**
+
+```js
+import base from "@srclaunch/dx/ava.config";
+
+export default {
+  ...base,
+  // Any custom config here...
+};
+```
+
+#### Standard Version
+
+**`.versionrc.cjs`**
+
+```js
+const base = require("@srclaunch/dx/.versionrc");
+
+module.exports = {
+  ...base,
+  // Any custom config here...
 };
 ```
