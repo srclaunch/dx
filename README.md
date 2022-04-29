@@ -29,9 +29,9 @@ Install each of the following dependencies you choose to use.
 <!-- prettier-ignore -->
 | Linter/Configuration | Command |
 |:---------------------|:--------|
-| `eslint` | `npm i -D eslint` or `yarn add eslint -D` |
+| `eslint` | `npm i -D eslint eslint-config-prettier eslint-config-stylelint eslint-import-resolver-typescript eslint-plugin-functional eslint-plugin-import eslint-plugin-node eslint-plugin-only-warn eslint-plugin-prettier eslint-plugin-simple-import-sort eslint-plugin-sort-keys-fix eslint-plugin-sort-requires eslint-plugin-testing-library eslint-plugin-unicorn @typescript-eslint/parser @typescript-eslint/eslint-plugin` or `yarn add eslint eslint-config-prettier eslint-config-stylelint eslint-import-resolver-typescript eslint-plugin-functional eslint-plugin-import eslint-plugin-node eslint-plugin-only-warn eslint-plugin-prettier eslint-plugin-simple-import-sort eslint-plugin-sort-keys-fix eslint-plugin-sort-requires eslint-plugin-testing-library eslint-plugin-unicorn @typescript-eslint/parser @typescript-eslint/eslint-plugin -D` |
 | `prettier` | `npm i -D prettier` or `yarn add prettier -D` |
-| `stylelint` | `npm i -D stylelint` or `yarn add stylelint -D` |
+| `stylelint` | `npm i -D stylelint` or `yarn add stylelint stylelint-config-idiomatic-order stylelint-config-prettier stylelint-config-recommended stylelint-order -D` |
 | `commitlint` | `npm i -D @commitlint/config-conventional @commitlint/cli` or `yarn add @commitlint/config-conventional @commitlint/cli -D` |
 | `typescript` | `npm i -D typescript` or `yarn add typescript -D` |
 | `jest` | `npm i -D jest` or `yarn add jest -D` |
