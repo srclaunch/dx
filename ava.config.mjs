@@ -11,6 +11,5 @@ export default {
     "src/**/*.test.js",
   ],
   nodeArguments: ["--loader=ts-node/esm"],
-  require: ["ts-node/register/transpile-only"],
   verbose: false,
 };
