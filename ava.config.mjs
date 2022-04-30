@@ -1,16 +1,16 @@
 export default {
   extensions: {
-    ts: 'module',
-    tsx: 'module',
+    ts: "module",
+    tsx: "module",
   },
   failFast: true,
   files: [
-    'src/__tests__/**/*',
-    'src/tests/**/*',
-    'src/**/*.test.ts',
-    'src/**/*.test.js',
+    "src/__tests__/**/*",
+    "src/tests/**/*",
+    "src/**/*.test.ts",
+    "src/**/*.test.js",
   ],
-  nodeArguments: ['--loader=ts-node/esm'],
-  require: ['ts-node/register/transpile-only'],
-  verbose: true,
+  nodeArguments: ["--loader=ts-node/esm"],
+  require: ["ts-node/register/transpile-only"],
+  verbose: false,
 };
