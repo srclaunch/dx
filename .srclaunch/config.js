@@ -6,7 +6,7 @@ export default {
   release: {
     package: {
       access: "public",
-      export: [
+      exports: [
         {
           path: "./.commitlintrc",
           import: "./.commitlintrc.mjs",
