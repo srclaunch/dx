@@ -6,7 +6,7 @@ export default {
     "Quality of life configuration and tooling for development environments.",
   type: ProjectType.Library,
   release: {
-    library: {
+    package: {
       access: PackageAccess.Public,
       export: [
         {

@@ -2,7 +2,7 @@ name: '@srclaunch/dx'
 description: Quality of life configuration and tooling for development environments.
 author: Steven Bennett <steven@srclaunch.com>
 license: MIT
-version: 0.1.54
+version: 0.1.55
 engines:
   node: '>=16'
   npm: '>=16'
