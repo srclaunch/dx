@@ -2,7 +2,7 @@ name: '@srclaunch/dx'
 description: Quality of life configuration and tooling for development environments.
 author: Steven Bennett <steven@srclaunch.com>
 license: MIT
-version: 0.1.58
+version: 0.1.59
 engines:
   node: '>=16'
   npm: '>=16'
@@ -92,7 +92,7 @@ devDependencies:
   eslint-plugin-prettier: 4.0.0
   prettier: 2.6.2
   standard-version: 9.3.2
-  '@srclaunch/cli': 0.1.437
+  '@srclaunch/cli': 0.1.438
   eslint-config-stylelint: 15.1.0
   stylelint: 14.8.2
   stylelint-config-idiomatic-order: 8.1.0
