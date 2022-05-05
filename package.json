@@ -20,8 +20,26 @@
     "build": "yarn srclaunch build"
   },
   "files": [
-    "package.json",
-    "dist"
+    ".commitlintrc.mjs",
+    ".commitlintrc.umd.cjs",
+    ".eslintrc.mjs",
+    ".eslintrc.umd.cjs",
+    ".eslintrc.ui.mjs",
+    ".eslintrc.ui.umd.cjs",
+    ".prettierrc.mjs",
+    ".prettierrc.umd.cjs",
+    ".stylelintrc.mjs",
+    ".stylelintrc.umd.cjs",
+    ".stylelintrc.ui.mjs",
+    ".stylelintrc.ui.umd.cjs",
+    ".versionrc.mjs",
+    ".versionrc.umd.cjs",
+    "ava.config.mjs",
+    "ava.config.umd.cjs",
+    "jest.config.mjs",
+    "jest.config.umd.cjs",
+    "tsconfig.json",
+    "tsconfig.ui.json"
   ],
   "exports": {
     ".": {
