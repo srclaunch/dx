@@ -93,5 +93,10 @@ export default {
   },
   requirements: {
     node: ">=16",
+    srclaunch: {
+      dx: false,
+      cli: true,
+      types: true,
+    },
   },
 };
