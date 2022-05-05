@@ -1,13 +1,11 @@
-import { PackageAccess, License, ProjectType } from "@srclaunch/types";
-
 export default {
   name: "@srclaunch/dx",
   description:
     "Quality of life configuration and tooling for development environments.",
-  type: ProjectType.Library,
+  type: "library",
   release: {
     package: {
-      access: PackageAccess.Public,
+      access: "public",
       export: [
         {
           path: "./.commitlintrc",
@@ -87,7 +85,7 @@ export default {
         "tsconfig.json",
         "tsconfig.ui.json",
       ],
-      license: License.MIT,
+      license: "MIT",
       registry: "https://registry.npmjs.org/",
     },
   },
@@ -96,7 +94,7 @@ export default {
     srclaunch: {
       dx: false,
       cli: true,
-      types: true,
+      types: false,
     },
   },
 };
