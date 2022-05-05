@@ -36,9 +36,39 @@ files:
   - tsconfig.ui.json
 module: ./dist/index.mjs
 exports:
-  .:
-    import: ./dist/index.mjs
-    require: ./dist/index.umd.cjs
+  ./.commitlintrc:
+    import: ./.commitlintrc.mjs
+    require: ./.commitlintrc.umd.cjs
+  ./.eslintrc:
+    import: ./.eslintrc.mjs
+    require: ./.eslintrc.umd.cjs
+  ./.eslintrc.ui:
+    import: ./.eslintrc.ui.mjs
+    require: ./.eslintrc.ui.umd.cjs
+  ./.prettierrc:
+    import: ./.prettierrc.mjs
+    require: ./.prettierrc.umd.cjs
+  ./.stylelintrc:
+    import: ./.stylelintrc.mjs
+    require: ./.stylelintrc.umd.cjs
+  ./.stylelintrc.ui:
+    import: ./.stylelintrc.ui.mjs
+    require: ./.stylelintrc.ui.umd.cjs
+  ./.versionrc:
+    import: ./.versionrc.mjs
+    require: ./.versionrc.umd.cjs
+  ./ava.config:
+    import: ./ava.config.mjs
+    require: ./ava.config.umd.cjs
+  ./jest.config:
+    import: ./jest.config.mjs
+    require: ./jest.config.umd.cjs
+  ./tsconfig.json:
+    import: ./tsconfig.json
+    require: ./tsconfig.json
+  ./tsconfig.ui.json:
+    import: ./tsconfig.ui.json
+    require: ./tsconfig.ui.json
 scripts:
   yui: yarn upgrade-interactive
   build: yarn srclaunch build
