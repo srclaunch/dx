@@ -102,7 +102,7 @@ export default {
     },
   },
   requirements: {
-    node: ">=16",
+    node: ">=14",
     srclaunch: {
       dx: false,
       cli: true,
