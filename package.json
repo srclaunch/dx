@@ -91,9 +91,10 @@
     "release": "yarn srclaunch release"
   },
   "devDependencies": {
-    "@types/node": "17.0.31",
-    "standard-version": "9.3.2",
     "@srclaunch/cli": "0.1.515",
-    "@srclaunch/types": "0.1.183"
-  }
+    "@srclaunch/types": "0.1.183",
+    "@types/node": "17.0.31",
+    "standard-version": "9.3.2"
+  },
+  "packageManager": "yarn@3.2.0"
 }
