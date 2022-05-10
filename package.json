@@ -5,16 +5,14 @@
   "license": "MIT",
   "version": "0.1.72",
   "engines": {
-    "node": ">=16",
-    "yarn": ">=3.2.0"
+    "node": ">=16"
   },
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
   "type": "module",
-  "main": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
+  "main": null,
   "files": [
     ".commitlintrc.mjs",
     ".commitlintrc.umd.cjs",
@@ -37,7 +35,7 @@
     "tsconfig.json",
     "tsconfig.ui.json"
   ],
-  "module": "./dist/index.mjs",
+  "module": null,
   "exports": {
     "./.commitlintrc": {
       "import": "./.commitlintrc.mjs",
@@ -91,10 +89,9 @@
     "release": "yarn srclaunch release"
   },
   "devDependencies": {
-    "@srclaunch/cli": "0.1.516",
-    "@srclaunch/types": "0.1.183",
     "@types/node": "17.0.32",
-    "standard-version": "9.3.2"
-  },
-  "packageManager": "yarn@3.2.0"
+    "standard-version": "9.3.2",
+    "@srclaunch/cli": "0.1.517",
+    "@srclaunch/types": "0.1.183"
+  }
 }
