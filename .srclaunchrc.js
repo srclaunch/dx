@@ -96,7 +96,7 @@ export default {
     srclaunch: {
       dx: false,
       cli: true,
-      types: false,
+      types: true,
     },
   },
 };

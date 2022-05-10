@@ -1,1 +1,133 @@
-"{\n  \"name\": \"@srclaunch/dx\",\n  \"description\": \"Quality of life configuration and tooling for development environments.\",\n  \"author\": \"Steven Bennett <steven@srclaunch.com>\",\n  \"license\": \"MIT\",\n  \"version\": \"0.1.65\",\n  \"engines\": {\n    \"node\": \">=16\",\n    \"yarn\": \">=3.2.0\"\n  },\n  \"publishConfig\": {\n    \"access\": \"public\",\n    \"registry\": \"https://registry.npmjs.org/\"\n  },\n  \"type\": \"module\",\n  \"main\": \"./dist/index.mjs\",\n  \"types\": \"./dist/index.d.ts\",\n  \"files\": [\n    \".commitlintrc.mjs\",\n    \".commitlintrc.umd.cjs\",\n    \".eslintrc.mjs\",\n    \".eslintrc.umd.cjs\",\n    \".eslintrc.ui.mjs\",\n    \".eslintrc.ui.umd.cjs\",\n    \".prettierrc.mjs\",\n    \".prettierrc.umd.cjs\",\n    \".stylelintrc.mjs\",\n    \".stylelintrc.umd.cjs\",\n    \".stylelintrc.ui.mjs\",\n    \".stylelintrc.ui.umd.cjs\",\n    \".versionrc.mjs\",\n    \".versionrc.umd.cjs\",\n    \"ava.config.mjs\",\n    \"ava.config.umd.cjs\",\n    \"jest.config.mjs\",\n    \"jest.config.umd.cjs\",\n    \"tsconfig.json\",\n    \"tsconfig.ui.json\"\n  ],\n  \"module\": \"./dist/index.mjs\",\n  \"exports\": {\n    \"0\": {\n      \"path\": \"./.commitlintrc\",\n      \"import\": \"./.commitlintrc.mjs\",\n      \"require\": \"./.commitlintrc.umd.cjs\"\n    },\n    \"1\": {\n      \"path\": \"./.eslintrc\",\n      \"import\": \"./.eslintrc.mjs\",\n      \"require\": \"./.eslintrc.umd.cjs\"\n    },\n    \"2\": {\n      \"path\": \"./.eslintrc.ui\",\n      \"import\": \"./.eslintrc.ui.mjs\",\n      \"require\": \"./.eslintrc.ui.umd.cjs\"\n    },\n    \"3\": {\n      \"path\": \"./.prettierrc\",\n      \"import\": \"./.prettierrc.mjs\",\n      \"require\": \"./.prettierrc.umd.cjs\"\n    },\n    \"4\": {\n      \"path\": \"./.stylelintrc\",\n      \"import\": \"./.stylelintrc.mjs\",\n      \"require\": \"./.stylelintrc.umd.cjs\"\n    },\n    \"5\": {\n      \"path\": \"./.stylelintrc.ui\",\n      \"import\": \"./.stylelintrc.ui.mjs\",\n      \"require\": \"./.stylelintrc.ui.umd.cjs\"\n    },\n    \"6\": {\n      \"path\": \"./.versionrc\",\n      \"import\": \"./.versionrc.mjs\",\n      \"require\": \"./.versionrc.umd.cjs\"\n    },\n    \"7\": {\n      \"path\": \"./ava.config\",\n      \"import\": \"./ava.config.mjs\",\n      \"require\": \"./ava.config.umd.cjs\"\n    },\n    \"8\": {\n      \"path\": \"./jest.config\",\n      \"import\": \"./jest.config.mjs\",\n      \"require\": \"./jest.config.umd.cjs\"\n    },\n    \"9\": {\n      \"path\": \"./tsconfig.json\",\n      \"import\": \"./tsconfig.json\",\n      \"require\": \"./tsconfig.json\"\n    },\n    \"10\": {\n      \"path\": \"./tsconfig.ui.json\",\n      \"import\": \"./tsconfig.ui.json\",\n      \"require\": \"./tsconfig.ui.json\"\n    },\n    \"./tsconfig.ui.json\": {\n      \"import\": \"./tsconfig.ui.json\",\n      \"require\": \"./tsconfig.ui.json\"\n    }\n  },\n  \"scripts\": {\n    \"yui\": \"yarn upgrade-interactive\",\n    \"qr\": \"yarn srclaunch changesets add --files \\\".\\\" --message \\\"Quick release\\\" --type \\\"chore\\\" && yarn srclaunch release --push\",\n    \"build\": \"yarn srclaunch build\",\n    \"release\": \"yarn srclaunch release\"\n  },\n  \"devDependencies\": {\n    \"@types/node\": \"17.0.31\",\n    \"@microsoft/eslint-plugin-sdl\": \"0.2.0\",\n    \"eslint\": \"8.15.0\",\n    \"eslint-import-resolver-typescript\": \"2.7.1\",\n    \"eslint-plugin-eslint-comments\": \"3.2.0\",\n    \"eslint-plugin-functional\": \"4.2.1\",\n    \"eslint-plugin-import\": \"2.26.0\",\n    \"eslint-plugin-node\": \"11.1.0\",\n    \"eslint-plugin-only-warn\": \"1.0.3\",\n    \"eslint-plugin-regexp\": \"1.7.0\",\n    \"eslint-plugin-simple-import-sort\": \"7.0.0\",\n    \"eslint-plugin-sort-keys-fix\": \"1.1.2\",\n    \"eslint-plugin-sort-requires\": \"2.1.0\",\n    \"eslint-plugin-unicorn\": \"42.0.0\",\n    \"eslint-config-prettier\": \"8.5.0\",\n    \"eslint-plugin-prettier\": \"4.0.0\",\n    \"prettier\": \"2.6.2\",\n    \"standard-version\": \"9.3.2\",\n    \"@srclaunch/cli\": \"0.1.508\",\n    \"eslint-config-stylelint\": \"15.1.0\",\n    \"stylelint\": \"14.8.2\",\n    \"stylelint-config-idiomatic-order\": \"8.1.0\",\n    \"stylelint-config-prettier\": \"9.0.3\",\n    \"stylelint-config-recommended\": \"7.0.0\",\n    \"stylelint-order\": \"5.0.0\",\n    \"@typescript-eslint/eslint-plugin\": \"5.23.0\",\n    \"@typescript-eslint/parser\": \"5.23.0\",\n    \"typescript\": \"4.6.4\"\n  }\n}"
+{
+  "name": "@srclaunch/dx",
+  "description": "Quality of life configuration and tooling for development environments.",
+  "author": "Steven Bennett <steven@srclaunch.com>",
+  "license": "MIT",
+  "version": "0.1.65",
+  "engines": {
+    "node": ">=16",
+    "yarn": ">=3.2.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "type": "module",
+  "main": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    ".commitlintrc.mjs",
+    ".commitlintrc.umd.cjs",
+    ".eslintrc.mjs",
+    ".eslintrc.umd.cjs",
+    ".eslintrc.ui.mjs",
+    ".eslintrc.ui.umd.cjs",
+    ".prettierrc.mjs",
+    ".prettierrc.umd.cjs",
+    ".stylelintrc.mjs",
+    ".stylelintrc.umd.cjs",
+    ".stylelintrc.ui.mjs",
+    ".stylelintrc.ui.umd.cjs",
+    ".versionrc.mjs",
+    ".versionrc.umd.cjs",
+    "ava.config.mjs",
+    "ava.config.umd.cjs",
+    "jest.config.mjs",
+    "jest.config.umd.cjs",
+    "tsconfig.json",
+    "tsconfig.ui.json"
+  ],
+  "module": "./dist/index.mjs",
+  "exports": {
+    "0": {
+      "path": "./.commitlintrc",
+      "import": "./.commitlintrc.mjs",
+      "require": "./.commitlintrc.umd.cjs"
+    },
+    "1": {
+      "path": "./.eslintrc",
+      "import": "./.eslintrc.mjs",
+      "require": "./.eslintrc.umd.cjs"
+    },
+    "2": {
+      "path": "./.eslintrc.ui",
+      "import": "./.eslintrc.ui.mjs",
+      "require": "./.eslintrc.ui.umd.cjs"
+    },
+    "3": {
+      "path": "./.prettierrc",
+      "import": "./.prettierrc.mjs",
+      "require": "./.prettierrc.umd.cjs"
+    },
+    "4": {
+      "path": "./.stylelintrc",
+      "import": "./.stylelintrc.mjs",
+      "require": "./.stylelintrc.umd.cjs"
+    },
+    "5": {
+      "path": "./.stylelintrc.ui",
+      "import": "./.stylelintrc.ui.mjs",
+      "require": "./.stylelintrc.ui.umd.cjs"
+    },
+    "6": {
+      "path": "./.versionrc",
+      "import": "./.versionrc.mjs",
+      "require": "./.versionrc.umd.cjs"
+    },
+    "7": {
+      "path": "./ava.config",
+      "import": "./ava.config.mjs",
+      "require": "./ava.config.umd.cjs"
+    },
+    "8": {
+      "path": "./jest.config",
+      "import": "./jest.config.mjs",
+      "require": "./jest.config.umd.cjs"
+    },
+    "9": {
+      "path": "./tsconfig.json",
+      "import": "./tsconfig.json",
+      "require": "./tsconfig.json"
+    },
+    "10": {
+      "path": "./tsconfig.ui.json",
+      "import": "./tsconfig.ui.json",
+      "require": "./tsconfig.ui.json"
+    },
+    "./tsconfig.ui.json": {
+      "import": "./tsconfig.ui.json",
+      "require": "./tsconfig.ui.json"
+    }
+  },
+  "scripts": {
+    "yui": "yarn upgrade-interactive",
+    "qr": "yarn srclaunch changesets add --files \".\" --message \"Quick release\" --type \"chore\" && yarn srclaunch release --push",
+    "build": "yarn srclaunch build",
+    "release": "yarn srclaunch release"
+  },
+  "devDependencies": {
+    "@types/node": "17.0.31",
+    "@microsoft/eslint-plugin-sdl": "0.2.0",
+    "eslint": "8.15.0",
+    "eslint-import-resolver-typescript": "2.7.1",
+    "eslint-plugin-eslint-comments": "3.2.0",
+    "eslint-plugin-functional": "4.2.1",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-only-warn": "1.0.3",
+    "eslint-plugin-regexp": "1.7.0",
+    "eslint-plugin-simple-import-sort": "7.0.0",
+    "eslint-plugin-sort-keys-fix": "1.1.2",
+    "eslint-plugin-sort-requires": "2.1.0",
+    "eslint-plugin-unicorn": "42.0.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-prettier": "4.0.0",
+    "prettier": "2.6.2",
+    "standard-version": "9.3.2",
+    "@srclaunch/cli": "0.1.509",
+    "@srclaunch/types": "0.1.183",
+    "@typescript-eslint/eslint-plugin": "5.23.0",
+    "@typescript-eslint/parser": "5.23.0",
+    "typescript": "4.6.4"
+  }
+}
