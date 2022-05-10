@@ -11,6 +11,9 @@ export default {
     "Quality of life configuration and tooling for development environments.",
   type: ProjectType.Library,
   package: {
+    main: null,
+    module: null,
+    types: null,
     exports: [
       {
         path: "./.commitlintrc",
