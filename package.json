@@ -89,7 +89,7 @@
     "release": "yarn srclaunch release"
   },
   "devDependencies": {
-    "@srclaunch/cli": "0.1.524",
+    "@srclaunch/cli": "0.1.525",
     "@srclaunch/types": "0.1.188"
   }
 }
