@@ -12,6 +12,8 @@
     "registry": "https://registry.npmjs.org/"
   },
   "type": "module",
+  "main": null,
+  "types": null,
   "files": [
     ".commitlintrc.mjs",
     ".commitlintrc.umd.cjs",
@@ -34,6 +36,7 @@
     "tsconfig.json",
     "tsconfig.ui.json"
   ],
+  "module": null,
   "exports": {
     "./.commitlintrc": {
       "import": "./.commitlintrc.mjs",
@@ -87,8 +90,7 @@
     "release": "yarn srclaunch release"
   },
   "devDependencies": {
-    "@srclaunch/cli": "0.1.519",
+    "@srclaunch/cli": "0.1.520",
     "@srclaunch/types": "0.1.185"
-  },
-  "packageManager": "yarn@3.2.0"
+  }
 }
