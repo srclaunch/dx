@@ -10,6 +10,9 @@ export default {
     "src/**/*.test.ts",
     "src/**/*.test.js",
   ],
-  nodeArguments: ["--loader=ts-node/esm"],
+  nodeArguments: [
+    "--loader=ts-node/esm",
+    "--experimental-specifier-resolution=node",
+  ],
   verbose: false,
 };
