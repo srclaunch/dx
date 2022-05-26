@@ -12,7 +12,7 @@ export default {
     "plugin:import/typescript",
     "plugin:prettier/recommended",
   ],
-  ignorePatterns: [],
+  ignorePatterns: ["**/node_modules/**", "**/dist/**"],
   parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaVersion: 2022, // Allows for the parsing of modern ECMAScript features
